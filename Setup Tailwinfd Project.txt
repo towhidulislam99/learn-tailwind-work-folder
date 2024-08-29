@@ -1,10 +1,33 @@
 npm init -y
 
-npm install -D tailwindcss postcss autoprefixer
+npm install -D tailwindcss postcss autoprefixer vite
 
 npx tailwindcss init -p
 
 npm install -D vite
 
 npm i -D daisyui@latest
+
+setup Step:
+--------------------------------------
+tailwind.config.js file code:
+
+content: ["*"],
+
+content: ["./src/**/*.{html,js}"],
+--------------------------------------
+main.css file code:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+---------------------------------------
+
+package.json File work
+
+"start": "vite",
+"dev" : "vite",
+"build" : "vite build",
+
 
