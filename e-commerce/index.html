@@ -15,29 +15,30 @@
     </head>
     <body class=".dm-sans-display">
 <!-- header start-->
+
         <header>
-            <div class="sm:flex justify-between items-center text-center w-3/4 mx-auto py-6 border-b ">
+            <div class="sm:flex justify-between items-center text-center w-1/2 sm:w-3/4 mx-auto py-6 border-b ">
 
                 <div class="flex gap-2 m-2 items-center text-sm text-center">
                     <span class="material-symbols-outlined">call</span>
                     <span>+8801932946899</span>
                 </div>
-    
-                <div class="flex gap-2 m-2 text-2xl text-center items-center sm:text-4xl font-bold">
+
+                <div class="flex gap-2 m-6 sm:m-2 text-4xl sm:text-2xl text-center items-center font-bold">
                     <h2>AVIATO</h2>
                 </div>
-    
+
                 <div class="flex m-0 sm:m-2  gap-2 items-center text-sm text-center">
                     <div class="flex gap-1 items-center">
                         <span class="material-symbols-outlined">shopping_cart</span>
                         <span>Cart</span>
                     </div>
-    
+
                     <div class="flex gap-1 items-center">
                         <span class="material-symbols-outlined">search</span>
                         <span>Search</span>
                     </div>
-    
+
                     <div class="flex gap-1 items-center">
                         <select name="" id="">
                             <option value="en" selected>En</option>
@@ -50,10 +51,11 @@
             </div>
             
         </header>
+        
 <!-- header End-->
 
 <!-- Navbar start-->
-        <nav class="inline-flex sm:flex mx-auto items-center justify-center text-center py-10 gap-5">
+        <nav class="inline-flex sm:flex mx-auto items-center justify-center text-center py-10 gap-3 sm:gap-5 ml-4 sm:ml-0">
             <div>
                 <a href="#"><span class="font-light text-[10px] sm:text-sm uppercase sm:py-2 px-[2px] sm:px-2 items-center text-center">Home</span></a>
             </div>
@@ -65,7 +67,7 @@
                     </span>
                 </a>
 
-                <div class="group-hover:flex flex-col hidden text-gray bg-white text-left absolute border " >
+                <div class="group-hover:flex flex-col hidden text-gray bg-white text-left absolute border z-10 " >
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
@@ -82,7 +84,7 @@
                     </span>
                 </a>
 
-                <div class="group-hover:flex flex-col hidden text-gray bg-white text-left absolute border " >
+                <div class="group-hover:flex flex-col hidden text-gray bg-white text-left absolute border z-10 " >
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
@@ -100,7 +102,7 @@
                     </span>
                 </a>
 
-                <div class="group-hover:flex flex-col hidden text-gray bg-white text-left absolute border " >
+                <div class="group-hover:flex flex-col hidden text-gray bg-white text-left absolute border z-10 " >
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
@@ -118,7 +120,7 @@
                     </span>
                 </a>
 
-                <div class="group-hover:flex flex-col hidden text-gray bg-white text-left absolute border " >
+                <div class="group-hover:flex flex-col hidden text-gray bg-white text-left absolute border z-10 " >
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
                     <a href="#"><span class="px-2 py-2 whitespace-nowrap text-xs">Sub Menu</span></a>
@@ -131,13 +133,31 @@
         </nav>
 <!-- Navbar End-->
 
-<!-- Product Category Section Start-->
- <section class="p-20 text-center">
-    <p class="uppercase font-bold mb-5">Product Category</p>
+<!-- Carousel Section Start-->
+<section>
 
-    <div class=" sm:grid grid-cols-2 gap-5">
+<div id="containContainer" class="sm:p-20 text-center text-2xl font-bold text-white bg-cover bg-center bg-no-repeat filter brightness-75 h-36 sm:h-80 md:h-96 lg:h-1/2" style="background-image: url('images/bg-1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; filter: brightness(0.8); height:50vh;
+">
+    <span>Products</span>
+    <h1>The Beauty of nature is hidden in details</h1>
+    <button>Shop Now</button>
+</div>
+
+<div class="text-center my-5">
+    <button id="previousBtn" class="px-4 py-1 bg-slate-900 text-white">Previous</button>
+    <button id="nextBtn" class="px-4 py-1 bg-slate-900 text-white">Next</button>
+</div>
+
+</section>
+<!-- Carousel Section End-->
+
+<!-- Product Category Section Start-->
+ <section class="sm:p-10 text-center">
+    <p class="uppercase font-bold mb-20">Product Category</p>
+
+    <div class="grid grid-cols-1 sm:grid-col-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
             <div>
-                <div class="flex gap-2 justify-between bg-pink-100 rounded  text-left text-black mb-5">
+                <div class="sm:flex gap-2 justify-between bg-pink-100 rounded  text-left text-black mb-5">
                 <div class="p-10">
                     <p class="text-nowrap">Clothes Sales</p>
                     <p class="text-nowrap">Shop New Seasson Clothing</p>
@@ -146,7 +166,7 @@
                 <img class="hover:scale-[1.2] transition-all duration-300 h-80 object-cover"  src="images/f-1.png" alt="">
                     
                 </div>
-                <div class="flex gap-2 justify-between bg-slate-200 rounded text-left text-black">
+                <div class="sm:flex gap-2 justify-between bg-slate-200 rounded text-left text-black">
                     <div class="p-10">
                         <p class="text-nowrap">Clothes Sales</p>
                         <p class="text-nowrap">Shop New Seasson Clothing</p>
@@ -155,7 +175,7 @@
 
                 </div>
             </div>
-            <div class="flex gap-2 justify-between bg-green-100 rounded text-left text-black">
+            <div class="sm:flex gap-2 justify-between bg-green-100 rounded text-left text-black">
                 <div class="p-4">
                     <p class="text-nowrap">Clothes Sales</p>
                     <p class="text-nowrap">Shop New Seasson Clothing</p>
@@ -167,15 +187,15 @@
 <!-- Product Category Section End-->
 
 <!-- Trendy Product Section Start-->
- <section class="p-20">
-    <p class="text-center uppercase mb-20">Trendy Product</p>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mx-auto">
+ <section class="p-6 sm:p-20">
+    <p class="text-center uppercase mb-20 font-bold">Trendy Product</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
 
         <div>
             <div class="bg-slate-200 text-center p-20 relative group cursor-pointer">
                 <div class="bg-slate-500 w-full h-full absolute opacity-0 group-hover:opacity-50 transition-all duration-400 top-0 right-0 buttom-0 "></div>
                 <span class="absolute top-5 right-5 inline-block p-1 text-xs uppercase bg-slate-900 text-white px-6">Sale</span>
-                <img class="h-60" src="images/p-5.png" alt="">
+                <img class="h-40 sm:h-60" src="images/p-5.png" alt="">
 
                 <div class="flex absolute -bottom-5 mx-auto right-0 left-0 opacity-0 items-center justify-center gap-2 group-hover:opacity-100 group-hover:bottom-10 transition-all duration-300">
                     <div class="w-8 h-8 flex items-center justify-center bg-white">
@@ -204,7 +224,7 @@
             <div class="bg-slate-200 text-center p-20 relative group cursor-pointer">
                 <div class="bg-slate-500 w-full h-full absolute opacity-0 group-hover:opacity-50 transition-all duration-400 top-0 right-0 buttom-0 "></div>
                 <span class="absolute top-5 right-5 inline-block p-1 text-xs uppercase bg-slate-900 text-white px-6">Sale</span>
-                <img class="h-60" src="images/p-8.png" alt="">
+                <img class="h-40 sm:h-60" src="images/p-8.png" alt="">
 
                 <div class="flex absolute -bottom-5 mx-auto right-0 left-0 opacity-0 items-center justify-center gap-2 group-hover:opacity-100 group-hover:bottom-10 transition-all duration-300">
                     <div class="w-8 h-8 flex items-center justify-center bg-white">
@@ -233,7 +253,7 @@
             <div class="bg-slate-200 text-center p-20 relative group cursor-pointer">
                 <div class="bg-slate-500 w-full h-full absolute opacity-0 group-hover:opacity-50 transition-all duration-400 top-0 right-0 buttom-0 "></div>
                 <span class="absolute top-5 right-5 inline-block p-1 text-xs uppercase bg-slate-900 text-white px-6">Sale</span>
-                <img class="h-60" src="images/p-7.png" alt="">
+                <img class="h-40 sm:h-60" src="images/p-7.png" alt="">
 
                 <div class="flex absolute -bottom-5 mx-auto right-0 left-0 opacity-0 items-center justify-center gap-2 group-hover:opacity-100 group-hover:bottom-10 transition-all duration-300">
                     <div class="w-8 h-8 flex items-center justify-center bg-white">
@@ -262,7 +282,7 @@
             <div class="bg-slate-200 text-center p-20 relative group cursor-pointer">
                 <div class="bg-slate-500 w-full h-full absolute opacity-0 group-hover:opacity-50 transition-all duration-400 top-0 right-0 buttom-0 "></div>
                 <span class="absolute top-5 right-5 inline-block p-1 text-xs uppercase bg-slate-900 text-white px-6">Sale</span>
-                <img class="h-60" src="images/p-4.png" alt="">
+                <img class="h-40 sm:h-60" src="images/p-4.png" alt="">
 
                 <div class="flex absolute -bottom-5 mx-auto right-0 left-0 opacity-0 items-center justify-center gap-2 group-hover:opacity-100 group-hover:bottom-10 transition-all duration-300">
                     <div class="w-8 h-8 flex items-center justify-center bg-white">
@@ -291,7 +311,7 @@
             <div class="bg-slate-200 text-center p-20 relative group cursor-pointer">
                 <div class="bg-slate-500 w-full h-full absolute opacity-0 group-hover:opacity-50 transition-all duration-400 top-0 right-0 buttom-0 "></div>
                 <span class="absolute top-5 right-5 inline-block p-1 text-xs uppercase bg-slate-900 text-white px-6">Sale</span>
-                <img class="h-60" src="images/p-3.png" alt="">
+                <img class="h-40 sm:h-60" src="images/p-3.png" alt="">
 
                 <div class="flex absolute -bottom-5 mx-auto right-0 left-0 opacity-0 items-center justify-center gap-2 group-hover:opacity-100 group-hover:bottom-10 transition-all duration-300">
                     <div class="w-8 h-8 flex items-center justify-center bg-white">
@@ -320,7 +340,7 @@
             <div class="bg-slate-200 text-center p-20 relative group cursor-pointer">
                 <div class="bg-slate-500 w-full h-full absolute opacity-0 group-hover:opacity-50 transition-all duration-400 top-0 right-0 buttom-0 "></div>
                 <span class="absolute top-5 right-5 inline-block p-1 text-xs uppercase bg-slate-900 text-white px-6">Sale</span>
-                <img class="h-60" src="images/p-1.png" alt="">
+                <img class="h-40 sm:h-60" src="images/p-1.png" alt="">
 
                 <div class="flex absolute -bottom-5 mx-auto right-0 left-0 opacity-0 items-center justify-center gap-2 group-hover:opacity-100 group-hover:bottom-10 transition-all duration-300">
                     <div class="w-8 h-8 flex items-center justify-center bg-white">
@@ -352,14 +372,14 @@
 
 <!-- Newslatter Section Start-->
 
-<section class="bg-slate-50 p-20 text-center">
+<section class="bg-slate-50 sm:p-20 text-center">
   
         <p class="uppercase mb-3">Subcribes to Newslatter</p>
-        <p class="w-2/4 mx-auto mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptas, nam molestiae dicta dolorum molestias, beatae a quod dolorem atque.</p>
+        <p class="w-10/12 sm:w-2/4 mx-auto mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptas, nam molestiae dicta dolorum molestias, beatae a quod dolorem atque.</p>
 
-        <div class="flex items-center justify-center w-full pt-4">
-            <input class="border border-slate-900 p-2 w-1/6 px-3  " type="email" placeholder="Type youe E-mail">
-            <button class="bg-slate-900 py-2 uppercase px-5 text-white border border-slate-900">Subcribes Now</button>
+        <div class="sm:flex items-center justify-center w-full pt-4">
+            <input class="block sm:flex border border-slate-900 p-2 w-4/5 sm:w-1/6 px-3 ml-10 sm:ml-0 mb-2 sm:mb-0 " type="email" placeholder="Type youe E-mail">
+            <button class="bg-slate-900 px-24 sm:px-5 py-2 uppercase text-white border border-slate-900">Subcribes Now</button>
         </div>
 </section>
 
@@ -375,7 +395,7 @@
 <!-- Instragram View Section End-->
 
 <!-- Footer start-->
-<footer class="bg-slate-50 p-20 text-center">
+<footer class="bg-slate-50 p-6 sm:p-20 text-center">
     <div class="flex justify-center items-center w-full gap-2">
         <div class="bg-slate-200 w-8 h-8 rounded-full flex text-center items-center justify-center gap-2 mb-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg>
@@ -407,7 +427,7 @@
 <!-- Footer End-->
 
 
-
+<script src="js/index.js"></script>
     
     </body>
 </html>
