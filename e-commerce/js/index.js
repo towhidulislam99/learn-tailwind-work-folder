@@ -20,27 +20,8 @@ previousBtn.addEventListener('click', function(){
 });
 console.log(nextBtn)
 
-
-
 //Implement the Filtering Data Code Here Start
-document.querySelectorAll('button[aria-controls^="filter-section-mobile-"]').forEach(button => {
-    button.addEventListener('click', () => {
-        const sectionId = button.getAttribute('aria-controls');
-        const section = document.getElementById(sectionId);
-
-        // Toggle the aria-expanded attribute
-        const isExpanded = button.getAttribute('aria-expanded') === 'true';
-        button.setAttribute('aria-expanded', !isExpanded);
-
-        // Toggle the visibility of the section
-        section.classList.toggle('hidden');
-
-        // Optionally, toggle icons if needed (plus/minus)
-        const [expandIcon, collapseIcon] = button.querySelectorAll('svg');
-        expandIcon.classList.toggle('hidden', !isExpanded);
-        collapseIcon.classList.toggle('hidden', isExpanded);
-    });
-});
 
 
 //Implement the Filtering Data Code Here Ends
+
