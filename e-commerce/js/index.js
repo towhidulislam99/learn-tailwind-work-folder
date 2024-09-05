@@ -72,3 +72,32 @@ menuItems.forEach(item => {
 
 //Implement the Filtering Data Code Here Ends
 
+//Color Filtering Data Code Here Start
+document.querySelectorAll('button[data-target]').forEach(button => {
+    button.addEventListener('click', () => {
+      const target = document.getElementById(button.dataset.target);
+      console.log((target));
+      
+      const iconExpand = button.querySelector('.icon-expand');
+      const iconCollapse = button.querySelector('.icon-collapse');
+      
+      if (target.hidden) {
+        target.hidden = false;
+        button.setAttribute('aria-expanded', 'true');
+        iconExpand.classList.add('hidden');
+        iconCollapse.classList.remove('hidden');
+      } else {
+        target.hidden = true;
+        button.setAttribute('aria-expanded', 'false');
+        iconExpand.classList.remove('hidden');
+        iconCollapse.classList.add('hidden');
+      }
+    });
+  });
+
+
+//Color Filtering Data Code Here Ends
+
+
+
+
