@@ -47,8 +47,8 @@ jspm_packages/
 .nuxt/
 
 # Tailwind CSS build artifacts
-public/css/tailwind.css
-public/css/tailwind.css.map
+# public/css/tailwind.css
+# public/css/tailwind.css.map
 
 # Build files for Tailwind CSS
 dist/
